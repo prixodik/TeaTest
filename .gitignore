@@ -3,3 +3,8 @@ dist
 .DS_Store
 *.log
 .vite
+
+# Служебные каталоги инструментов разработки
+.claude/
+.mcp.json
+CLAUDE.md
