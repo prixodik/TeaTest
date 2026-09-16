@@ -1,0 +1,28 @@
+.lk-cart {
+  --lk-cart--gap: 8px;
+  --lk-cart--feedback-size: 13px;
+  --lk-cart--feedback-color: var(--color-brand-deeper);
+  --lk-cart--feedback-opacity: 0;
+  --lk-cart--feedback-min-h: 18px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--lk-cart--gap);
+
+  &__feedback {
+    min-height: var(--lk-cart--feedback-min-h);
+    font-size: var(--lk-cart--feedback-size);
+    font-weight: 500;
+    color: var(--lk-cart--feedback-color);
+    opacity: var(--lk-cart--feedback-opacity);
+    transition: opacity 0.25s ease;
+  }
+
+  &--success {
+    --lk-cart--feedback-opacity: 1;
+  }
+
+  @media (min-width: 768px) {
+    --lk-cart--feedback-size: 14px;
+  }
+}

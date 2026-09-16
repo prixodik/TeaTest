@@ -1,0 +1,11 @@
+@use '../shared/styles/index.scss';
+@use '../shared/ui/button/button.scss';
+@use '../shared/ui/skeleton/skeleton.scss';
+@use '../entities/product/product.scss';
+@use '../features/select-packaging/select-packaging.scss';
+@use '../features/add-to-cart/add-to-cart.scss';
+@use '../features/product-gallery/product-gallery.scss';
+@use '../features/favorite/favorite.scss';
+@use '../widgets/header/header.scss';
+@use '../widgets/product-sidebar/product-sidebar.scss';
+@use '../pages/product/product-page.scss';

@@ -1,0 +1,53 @@
+.lk-sidebar {
+  --lk-sidebar--pad: 16px;
+  --lk-sidebar--gap: 16px;
+  --lk-sidebar--radius: var(--radius-lg);
+  --lk-sidebar--bg: var(--color-surface);
+  --lk-sidebar--display: flex;
+  --lk-sidebar--cols: none;
+  --lk-sidebar--card-gap: 10px;
+  --lk-sidebar--card-pad: 14px;
+  --lk-sidebar--card-radius: var(--radius-md);
+  --lk-sidebar--caption-size: 11px;
+  --lk-sidebar--caption-color: var(--color-text-muted);
+
+  display: var(--lk-sidebar--display);
+  flex-direction: column;
+  grid-template-columns: var(--lk-sidebar--cols);
+  gap: var(--lk-sidebar--gap);
+  padding: var(--lk-sidebar--pad);
+  border-radius: var(--lk-sidebar--radius);
+  background: var(--lk-sidebar--bg);
+  box-shadow: var(--shadow-soft);
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--lk-sidebar--card-gap);
+    padding: var(--lk-sidebar--card-pad);
+    border: 1px solid var(--color-border);
+    border-radius: var(--lk-sidebar--card-radius);
+  }
+
+  &__caption {
+    font-size: var(--lk-sidebar--caption-size);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--lk-sidebar--caption-color);
+  }
+
+  @media (min-width: 768px) {
+    --lk-sidebar--pad: 20px;
+    --lk-sidebar--gap: 20px;
+    --lk-sidebar--display: grid;
+    --lk-sidebar--cols: repeat(3, minmax(0, 1fr));
+    --lk-sidebar--card-pad: 16px;
+    --lk-sidebar--caption-size: 12px;
+  }
+
+  @media (min-width: 1200px) {
+    --lk-sidebar--display: flex;
+    --lk-sidebar--cols: none;
+  }
+}

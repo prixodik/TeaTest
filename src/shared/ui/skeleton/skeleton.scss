@@ -1,0 +1,65 @@
+.lk-skeleton {
+  --lk-skeleton--h: 16px;
+  --lk-skeleton--w: 100%;
+  --lk-skeleton--radius: var(--radius-sm);
+  --lk-skeleton--bg: var(--color-skeleton);
+  --lk-skeleton--shine: var(--color-skeleton-shine);
+
+  display: block;
+  width: var(--lk-skeleton--w);
+  height: var(--lk-skeleton--h);
+  border-radius: var(--lk-skeleton--radius);
+  background: linear-gradient(
+    90deg,
+    var(--lk-skeleton--bg) 0%,
+    var(--lk-skeleton--shine) 45%,
+    var(--lk-skeleton--bg) 90%
+  );
+  background-size: 200% 100%;
+  animation: lk-skeleton-shimmer 1.4s ease-in-out infinite;
+
+  &--logo {
+    --lk-skeleton--w: 120px;
+    --lk-skeleton--h: 28px;
+  }
+
+  &--nav {
+    --lk-skeleton--w: 72px;
+    --lk-skeleton--h: 14px;
+  }
+
+  &--search {
+    --lk-skeleton--w: 100%;
+    --lk-skeleton--h: 40px;
+    --lk-skeleton--radius: var(--radius-md);
+  }
+
+  &--icon {
+    --lk-skeleton--w: 36px;
+    --lk-skeleton--h: 36px;
+    --lk-skeleton--radius: 50%;
+  }
+
+  &--title {
+    --lk-skeleton--h: 18px;
+    --lk-skeleton--w: 70%;
+  }
+
+  &--line {
+    --lk-skeleton--h: 12px;
+  }
+
+  &--block {
+    --lk-skeleton--h: 72px;
+    --lk-skeleton--radius: var(--radius-md);
+  }
+}
+
+@keyframes lk-skeleton-shimmer {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

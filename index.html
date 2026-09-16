@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ананасовый улун — Чайный Бум</title>
+    <meta
+      name="description"
+      content="Ананасовый улун — ароматизированный чай. Настой светло-янтарный с яркой ананасовой нотой. Купить в интернет-магазине Чайный Бум."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page" id="app">
+      <header class="page__header" data-widget="header" id="header">
+        <div class="lk-header">
+          <div class="lk-header__inner">
+            <div class="lk-header__logo" aria-hidden="true">
+              <span class="lk-skeleton lk-skeleton--logo"></span>
+            </div>
+            <nav class="lk-header__nav" aria-hidden="true">
+              <span class="lk-skeleton lk-skeleton--nav"></span>
+              <span class="lk-skeleton lk-skeleton--nav"></span>
+              <span class="lk-skeleton lk-skeleton--nav"></span>
+              <span class="lk-skeleton lk-skeleton--nav"></span>
+            </nav>
+            <div class="lk-header__search" aria-hidden="true">
+              <span class="lk-skeleton lk-skeleton--search"></span>
+            </div>
+            <div class="lk-header__actions" aria-hidden="true">
+              <span class="lk-skeleton lk-skeleton--icon"></span>
+              <span class="lk-skeleton lk-skeleton--icon"></span>
+              <span class="lk-skeleton lk-skeleton--icon"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="page__body">
+        <main class="page__main" data-entity="product" id="product-main">
+          <article class="lk-product" itemscope itemtype="https://schema.org/Product">
+            <div class="lk-product__layout">
+              <div class="lk-product__media-col">
+                <div
+                  class="lk-gallery"
+                  data-feature="product-gallery"
+                  aria-label="Галерея товара"
+                >
+                  <div class="lk-gallery__stage">
+                    <button
+                      type="button"
+                      class="lk-gallery__main-btn"
+                      data-gallery-open
+                      aria-label="Увеличить фотографию"
+                    >
+                      <img
+                        class="lk-gallery__main"
+                        data-gallery-main
+                        src="/images/ananasovij-ulun.jpg"
+                        alt="Ананасовый улун — сухой лист чая"
+                        width="800"
+                        height="800"
+                        itemprop="image"
+                      />
+                    </button>
+                    <span class="lk-gallery__zoom-hint" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <path d="M20 20l-3-3"></path>
+                        <path d="M11 8v6M8 11h6"></path>
+                      </svg>
+                      Увеличить
+                    </span>
+                  </div>
+
+                  <div class="lk-gallery__thumbs" role="list">
+                    <button
+                      type="button"
+                      class="lk-gallery__thumb lk-gallery__thumb--active"
+                      data-gallery-thumb
+                      data-full-src="/images/ananasovij-ulun.jpg"
+                      aria-label="Фото 1"
+                      aria-current="true"
+                    >
+                      <img
+                        class="lk-gallery__thumb-img"
+                        src="/images/ananasovij-ulun.jpg"
+                        alt=""
+                        width="120"
+                        height="120"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="lk-gallery__thumb"
+                      data-gallery-thumb
+                      data-full-src="https://media.teaboom.ru/images/bf4324bc-110e-4064-9ad6-a314ace3e4d8.jpg"
+                      aria-label="Фото 2"
+                    >
+                      <img
+                        class="lk-gallery__thumb-img"
+                        src="https://media.teaboom.ru/images/bf4324bc-110e-4064-9ad6-a314ace3e4d8.400x400.jpg"
+                        alt=""
+                        width="120"
+                        height="120"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="lk-gallery__thumb"
+                      data-gallery-thumb
+                      data-full-src="https://media.teaboom.ru/images/e9f4b8f8-99d7-4739-858d-e6f0d00b8da0.800x800.jpg"
+                      aria-label="Фото 3"
+                    >
+                      <img
+                        class="lk-gallery__thumb-img"
+                        src="https://media.teaboom.ru/images/e9f4b8f8-99d7-4739-858d-e6f0d00b8da0.800x800.jpg"
+                        alt=""
+                        width="120"
+                        height="120"
+                      />
+                    </button>
+                    <button
+                      type="button"
+                      class="lk-gallery__thumb"
+                      data-gallery-thumb
+                      data-full-src="https://media.teaboom.ru/images/f78385cf-799d-4b3f-a29d-23b8e4023b0b.800x800.jpg"
+                      aria-label="Фото 4"
+                    >
+                      <img
+                        class="lk-gallery__thumb-img"
+                        src="https://media.teaboom.ru/images/f78385cf-799d-4b3f-a29d-23b8e4023b0b.800x800.jpg"
+                        alt=""
+                        width="120"
+                        height="120"
+                      />
+                    </button>
+                  </div>
+
+                  <div
+                    class="lk-gallery__lightbox"
+                    data-gallery-lightbox
+                    data-open="false"
+                    aria-hidden="true"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-label="Просмотр фотографии"
+                  >
+                    <div class="lk-gallery__lightbox-dialog">
+                      <button
+                        type="button"
+                        class="lk-gallery__lightbox-close"
+                        data-gallery-close
+                        aria-label="Закрыть"
+                      >
+                        ✕
+                      </button>
+                      <button
+                        type="button"
+                        class="lk-gallery__lightbox-nav lk-gallery__lightbox-nav--prev"
+                        data-gallery-prev
+                        aria-label="Предыдущее фото"
+                      >
+                        ‹
+                      </button>
+                      <img
+                        class="lk-gallery__lightbox-img"
+                        data-gallery-lightbox-img
+                        src="/images/ananasovij-ulun.jpg"
+                        alt="Ананасовый улун — сухой лист чая"
+                      />
+                      <button
+                        type="button"
+                        class="lk-gallery__lightbox-nav lk-gallery__lightbox-nav--next"
+                        data-gallery-next
+                        aria-label="Следующее фото"
+                      >
+                        ›
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="lk-product__info">
+                <div class="lk-product__headline">
+                  <div class="lk-product__headline-main">
+                    <a class="lk-product__category" href="#" itemprop="category">
+                      Ароматизированный
+                    </a>
+                    <h1 class="lk-product__title" itemprop="name">Ананасовый улун</h1>
+                  </div>
+                  <button
+                    type="button"
+                    class="lk-favorite"
+                    data-favorite
+                    data-feature="favorite"
+                    aria-pressed="false"
+                    aria-label="Добавить в избранное"
+                  >
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 20.2l-1.45-1.32C5.4 14.36 2 11.28 2 7.5 2 4.42 4.42 2 7.5 2c1.74 0 3.41.81 4.5 2.09C13.09 2.81 14.76 2 16.5 2 19.58 2 22 4.42 22 7.5c0 3.78-3.4 6.86-8.55 11.38L12 20.2z"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="lk-product__meta">
+                  <span
+                    class="lk-product__availability"
+                    data-product-availability
+                  >
+                    <span class="lk-product__availability-dot" aria-hidden="true"></span>
+                    В наличии:
+                    <span data-product-availability-text>Много</span>
+                  </span>
+                  <span>
+                    Артикул:
+                    <span class="lk-product__sku" data-product-sku itemprop="sku">01306</span>
+                  </span>
+                  <a class="lk-product__review" href="#reviews">Оставить отзыв</a>
+                </div>
+
+                <div
+                  class="lk-product__prices"
+                  itemprop="offers"
+                  itemscope
+                  itemtype="https://schema.org/Offer"
+                >
+                  <span class="lk-product__price" data-product-price>326,40 ₽</span>
+                  <meta itemprop="price" content="326.40" />
+                  <meta itemprop="priceCurrency" content="RUB" />
+                  <span class="lk-product__price-old" data-product-price-old>349,20 ₽</span>
+                  <span class="lk-product__discount" data-product-discount>−7%</span>
+                </div>
+
+                <div class="lk-product__packaging" data-feature="select-packaging">
+                  <div class="lk-packaging">
+                    <span class="lk-packaging__label" id="packaging-label">Фасовка</span>
+                    <div
+                      class="lk-packaging__list"
+                      role="group"
+                      aria-labelledby="packaging-label"
+                    >
+                      <button
+                        type="button"
+                        class="lk-packaging__item lk-packaging__item--active"
+                        data-packaging-id="100"
+                        aria-pressed="true"
+                      >
+                        <span class="lk-packaging__weight">100 г</span>
+                        <span class="lk-packaging__sku">арт. 01306</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="lk-packaging__item"
+                        data-packaging-id="500"
+                        aria-pressed="false"
+                      >
+                        <span class="lk-packaging__weight">500 г</span>
+                        <span class="lk-packaging__sku">арт. 01307</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="lk-packaging__item"
+                        data-packaging-id="1000"
+                        aria-pressed="false"
+                      >
+                        <span class="lk-packaging__weight">1000 г</span>
+                        <span class="lk-packaging__sku">арт. 01308</span>
+                      </button>
+                      <button
+                        type="button"
+                        class="lk-packaging__item"
+                        data-packaging-id="5000"
+                        aria-pressed="false"
+                      >
+                        <span class="lk-packaging__weight">5000 г</span>
+                        <span class="lk-packaging__sku">арт. 01309</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="lk-product__actions" data-feature="add-to-cart">
+                  <div class="lk-cart">
+                    <div class="lk-product__actions-row">
+                      <button
+                        type="button"
+                        class="lk-button lk-cart__button"
+                        data-add-to-cart
+                      >
+                        В корзину
+                      </button>
+                    </div>
+                    <p
+                      class="lk-cart__feedback"
+                      data-cart-feedback
+                      aria-live="polite"
+                    ></p>
+                  </div>
+                </div>
+
+                <section
+                  class="lk-product__description"
+                  aria-labelledby="product-desc-title"
+                >
+                  <h2 class="lk-product__description-title" id="product-desc-title">
+                    О вкусе
+                  </h2>
+                  <p class="lk-product__description-text" itemprop="description">
+                    Настой прозрачный, светло-янтарного цвета. Классическая нота
+                    светлого фуцзяньского улуна переплетается с яркой ананасовой
+                    нотой.
+                  </p>
+                </section>
+
+                <section id="reviews" class="lk-product__description">
+                  <h2 class="lk-product__description-title">Отзывы</h2>
+                  <p class="lk-product__description-text">
+                    Ещё никто не оставлял отзывов. Будьте первым!
+                  </p>
+                </section>
+              </div>
+            </div>
+          </article>
+        </main>
+
+        <aside
+          class="page__sidebar"
+          data-widget="sidebar"
+          id="product-sidebar"
+          aria-label="Дополнительная информация"
+        >
+          <div class="lk-sidebar">
+            <section class="lk-sidebar__card" aria-hidden="true">
+              <span class="lk-sidebar__caption">Доставка</span>
+              <span class="lk-skeleton lk-skeleton--title"></span>
+              <span class="lk-skeleton lk-skeleton--line"></span>
+              <span
+                class="lk-skeleton lk-skeleton--line"
+                style="--lk-skeleton--w: 80%"
+              ></span>
+              <span class="lk-skeleton lk-skeleton--block"></span>
+            </section>
+            <section class="lk-sidebar__card" aria-hidden="true">
+              <span class="lk-sidebar__caption">Наличие</span>
+              <span class="lk-skeleton lk-skeleton--title"></span>
+              <span class="lk-skeleton lk-skeleton--line"></span>
+              <span
+                class="lk-skeleton lk-skeleton--line"
+                style="--lk-skeleton--w: 55%"
+              ></span>
+            </section>
+            <section class="lk-sidebar__card" aria-hidden="true">
+              <span class="lk-sidebar__caption">Ещё</span>
+              <span class="lk-skeleton lk-skeleton--line"></span>
+              <span
+                class="lk-skeleton lk-skeleton--line"
+                style="--lk-skeleton--w: 90%"
+              ></span>
+              <span
+                class="lk-skeleton lk-skeleton--line"
+                style="--lk-skeleton--w: 65%"
+              ></span>
+              <span class="lk-skeleton lk-skeleton--block"></span>
+            </section>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <script type="module" src="/src/app/index.js"></script>
+  </body>
+</html>

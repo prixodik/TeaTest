@@ -1,0 +1,89 @@
+.lk-packaging {
+  --lk-packaging--gap: 10px;
+  --lk-packaging--list-gap: 8px;
+  --lk-packaging--list-cols: repeat(2, minmax(0, 1fr));
+  --lk-packaging--label-size: 13px;
+  --lk-packaging--label-color: var(--color-text-muted);
+  --lk-packaging--item-bg: var(--color-surface);
+  --lk-packaging--item-border: var(--color-border);
+  --lk-packaging--item-color: var(--color-text);
+  --lk-packaging--item-pad-y: 12px;
+  --lk-packaging--item-pad-x: 14px;
+  --lk-packaging--item-radius: var(--radius-sm);
+  --lk-packaging--weight-size: 14px;
+  --lk-packaging--sku-size: 11px;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--lk-packaging--gap);
+
+  &__label {
+    font-size: var(--lk-packaging--label-size);
+    font-weight: 600;
+    color: var(--lk-packaging--label-color);
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: var(--lk-packaging--list-cols);
+    gap: var(--lk-packaging--list-gap);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: var(--lk-packaging--item-pad-y) var(--lk-packaging--item-pad-x);
+    border: 1px solid var(--lk-packaging--item-border);
+    border-radius: var(--lk-packaging--item-radius);
+    background: var(--lk-packaging--item-bg);
+    color: var(--lk-packaging--item-color);
+    text-align: left;
+    transition:
+      border-color 0.2s ease,
+      background-color 0.2s ease,
+      color 0.2s ease;
+
+    &:hover {
+      --lk-packaging--item-border: #c9c0b4;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--color-brand);
+      outline-offset: 2px;
+    }
+
+    &--active {
+      --lk-packaging--item-bg: var(--color-brand-soft);
+      --lk-packaging--item-border: var(--color-brand-deeper);
+      --lk-packaging--item-color: var(--color-brand-ink);
+    }
+  }
+
+  &__weight {
+    font-size: var(--lk-packaging--weight-size);
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__sku {
+    font-size: var(--lk-packaging--sku-size);
+    opacity: 0.75;
+    white-space: nowrap;
+  }
+
+  @media (min-width: 768px) {
+    --lk-packaging--list-cols: repeat(4, minmax(0, 1fr));
+    --lk-packaging--item-pad-y: 10px;
+    --lk-packaging--item-pad-x: 10px;
+    --lk-packaging--label-size: 14px;
+    --lk-packaging--weight-size: 14px;
+  }
+
+  @media (min-width: 1400px) {
+    --lk-packaging--item-pad-y: 14px;
+    --lk-packaging--item-pad-x: 16px;
+    --lk-packaging--weight-size: 15px;
+  }
+}
