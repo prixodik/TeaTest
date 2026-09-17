@@ -23,6 +23,13 @@ npm run preview
 
 Артефакты — в `dist/`.
 
+## Демо (GitHub Pages)
+
+Сайт: https://prixodik.github.io/TeaTest/
+
+Деплой: GitHub Actions собирает Vite (`npm run build`) и публикует `dist`.  
+Нужен `base: '/TeaTest/'` в `vite.config.js` (уже задан).
+
 ## Структура
 
 ```
